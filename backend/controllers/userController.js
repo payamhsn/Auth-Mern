@@ -13,6 +13,7 @@ const authUser = asyncHandler(async (req, res) => {
 // @route   POST /api/users
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
+  console.log(req.body);
   res.status(200).json({ message: "register" });
 });
 
